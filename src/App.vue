@@ -2,20 +2,23 @@
   <v-app>
     <AppBar/>
     <v-main>
-      <v-container>
+      <v-container class="mb-5">
         <router-view/>
       </v-container>
     </v-main>
+    <Footer/>
   </v-app>
 </template>
 
 <script>
 import AppBar from './components/AppBar'
+import Footer from '@/components/Footer.vue'
 export default {
   name: 'App',
 
   components: {
-    AppBar
+    AppBar,
+    Footer
   },
 
   data: () => ({
