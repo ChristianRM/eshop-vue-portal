@@ -17,8 +17,7 @@
 
 <script>
 // TODO
-// Inputs email, password, captcha
-// Also signup?
+// captcha
 import Login from "@/components/Login.vue";
 import Register from "@/components/Register.vue";
 

@@ -2,6 +2,9 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import SignIn from '../views/SignIn.vue'
+import SearchItems from '../views/SearchItems.vue'
+import FAQ from '../views/FAQ.vue'
+import ReturnPolicy from '../views/ReturnPolicy.vue'
 
 Vue.use(VueRouter)
 
@@ -23,6 +26,21 @@ const routes = [
     path: '/signin',
     name: 'SignIn',
     component: SignIn
+  },
+  {
+    path: '/search',
+    name: 'SearchItems',
+    component: SearchItems
+  },
+  {
+    path: '/faq',
+    name: 'FAQ',
+    component: FAQ
+  },
+  {
+    path: '/returns',
+    name: 'ReturnPolicy',
+    component: ReturnPolicy
   }
 ]
 
