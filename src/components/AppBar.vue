@@ -2,7 +2,7 @@
   <v-app-bar app color="primary" hide-on-scroll dark height="80">
     <v-container>
       <v-row>
-        <v-btn color="info" height="60">
+        <v-btn color="info" height="60" to="/">
           <div class="d-flex align-center">
             <v-icon color="warning">mdi-shopping</v-icon>
             <v-toolbar-title>E-SHOP</v-toolbar-title>
@@ -11,10 +11,6 @@
         <v-spacer></v-spacer>
         <div>
           <v-autocomplete
-            v-model="select"
-            :loading="loading"
-            :items="items"
-            :search-input.sync="search"
             prepend-inner-icon="mdi-magnify"
             cache-items
             flat
@@ -27,10 +23,12 @@
           ></v-autocomplete>
         </div>
         <v-spacer></v-spacer>
-        <div class="d-flex align-center navlink">
-          <v-icon color="warning">mdi-login</v-icon>
-          <v-toolbar-title>Login/Register</v-toolbar-title>
-        </div>
+        <v-btn to="/signin" height="60">
+          <div class="d-flex align-center navlink" :to="route">
+            <v-icon color="warning">mdi-login</v-icon>
+            <v-toolbar-title>Login/Register</v-toolbar-title>
+          </div>
+        </v-btn>
       </v-row>
     </v-container>
   </v-app-bar>
@@ -39,6 +37,7 @@
 <script>
 export default {
   name: "AppBar",
+  data: () => ({}),
 };
 </script>
 
