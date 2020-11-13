@@ -3,7 +3,7 @@
     <Carousel></Carousel>
     <FeaturedItems class="mt-1"/>
     <BrowseCategories class="mt-1"/>
-    <FAQ/>
+    <Extra/>
   </div>
 </template>
 
@@ -12,7 +12,7 @@
 import Carousel from '@/components/Carousel.vue'
 import FeaturedItems from '@/components/FeaturedItems.vue'
 import BrowseCategories from '@/components/BrowseCategories.vue'
-import FAQ from '@/components/FAQ.vue'
+import Extra from '@/components/Extra.vue'
 
 
 export default {
@@ -21,7 +21,7 @@ export default {
     Carousel,
     FeaturedItems,
     BrowseCategories,
-    FAQ
+    Extra
   }
 }
 </script>

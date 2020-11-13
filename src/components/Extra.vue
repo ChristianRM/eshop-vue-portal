@@ -13,7 +13,7 @@
               >
               <v-spacer />
               <v-card-actions>
-                <v-btn outlined> Learn more </v-btn>
+                <v-btn to="/faq" outlined> Learn more </v-btn>
               </v-card-actions>
             </div>
             <div>
@@ -39,7 +39,7 @@
               >
 
               <v-card-actions>
-                <v-btn outlined> Learn more </v-btn>
+                <v-btn to="/returns" outlined> Learn more </v-btn>
               </v-card-actions>
             </div>
             <div>
@@ -58,6 +58,6 @@
 
 <script>
 export default {
-  name: "FAQ",
+  name: "Extra",
 };
 </script>
