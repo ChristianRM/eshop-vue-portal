@@ -11,8 +11,8 @@
 </template>
 
 <script>
-import AppBar from './components/AppBar'
-import Footer from '@/components/Footer.vue'
+import AppBar from './components/app/AppBar'
+import Footer from '@/components/app/Footer.vue'
 export default {
   name: 'App',
 

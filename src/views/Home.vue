@@ -9,10 +9,10 @@
 
 <script>
 // @ is an alias to /src
-import Carousel from '@/components/Carousel.vue'
-import FeaturedItems from '@/components/FeaturedItems.vue'
-import BrowseCategories from '@/components/BrowseCategories.vue'
-import Extra from '@/components/Extra.vue'
+import Carousel from '@/components/home/Carousel.vue'
+import FeaturedItems from '@/components/home/FeaturedItems.vue'
+import BrowseCategories from '@/components/home/BrowseCategories.vue'
+import Extra from '@/components/home/Extra.vue'
 
 
 export default {

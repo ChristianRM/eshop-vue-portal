@@ -5,6 +5,7 @@ import SignIn from '../views/SignIn.vue'
 import SearchItems from '../views/SearchItems.vue'
 import FAQ from '../views/FAQ.vue'
 import ReturnPolicy from '../views/ReturnPolicy.vue'
+import Item from '../views/Item.vue'
 
 Vue.use(VueRouter)
 
@@ -41,6 +42,11 @@ const routes = [
     path: '/returns',
     name: 'ReturnPolicy',
     component: ReturnPolicy
+  },
+  {
+    path: '/item',
+    name: 'Item',
+    component: Item
   }
 ]
 

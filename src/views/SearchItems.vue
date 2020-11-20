@@ -15,8 +15,8 @@
 // Side filtering
 // Sort by newest/price lo-hi/reviews?
 // V-card f/e item
-import ItemList from "@/components/ItemList.vue";
-import ItemFilter from "@/components/ItemFilter.vue";
+import ItemList from "@/components/search/ItemList.vue";
+import ItemFilter from "@/components/search/ItemFilter.vue";
 
 export default {
   name: "SearchItems",

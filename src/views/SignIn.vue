@@ -18,8 +18,8 @@
 <script>
 // TODO
 // captcha
-import Login from "@/components/Login.vue";
-import Register from "@/components/Register.vue";
+import Login from "@/components/signin/Login.vue";
+import Register from "@/components/signin/Register.vue";
 
 export default {
   name: "Home",

@@ -13,8 +13,8 @@
 </template>
 
 <script>
-import Questions from "../components/Questions.vue";
-import ContactForm from "../components/ContactForm.vue";
+import Questions from "../components/faq/Questions.vue";
+import ContactForm from "../components/faq/ContactForm.vue";
 export default {
   components: { Questions, ContactForm },
 };
