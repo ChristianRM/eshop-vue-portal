@@ -1,37 +1,46 @@
 <template>
-  <v-container fluid>
-    <v-row class="pt-10">
-      <v-col :key="n" cols="1">
-        <v-img
-          :src="`https://picsum.photos/500/300?image=10`"
-          :lazy-src="`https://picsum.photos/10/6?image=10`"
-          aspect-ratio="1"
-        >
-          <template v-slot:placeholder>
-            <v-row class="fill-height ma-0" align="center" justify="center">
-              <v-progress-circular
-                indeterminate
-                color="grey lighten-5"
-              ></v-progress-circular>
-            </v-row>
-          </template>
-        </v-img>
+  <v-container>
+    <v-row justify="center">
+      <v-col cols="6">
+        <ItemPictures />
       </v-col>
-      <v-col cols="">
-        <v-img
-          lazy-src="https://picsum.photos/id/11/10/6"
-          max-height="450"
-          max-width="450"
-          src="https://picsum.photos/id/11/500/300"
-          aspect-ratio="1"
-        ></v-img>
+      <v-col cols="6">
+        <ItemDescription />
+        <ItemActions />
+      </v-col>
+    </v-row>
+    <v-row justify="center">
+      <v-col cols="8" align-self="center">
+        <h3>Product reviews</h3>
+        <v-divider></v-divider>
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col>
+        <ItemReviews class="mb-5" v-for="item in reviews" :key="item.id" />
       </v-col>
     </v-row>
   </v-container>
 </template>
 
 <script>
-export default {};
+import ItemPictures from "@/components/item/ItemPictures.vue";
+import ItemDescription from "@/components/item/ItemDescription.vue";
+import ItemActions from "@/components/item/ItemActions.vue";
+import ItemReviews from "@/components/item/ItemReviews.vue";
+
+export default {
+  name: "Item",
+  components: {
+    ItemPictures,
+    ItemDescription,
+    ItemActions,
+    ItemReviews,
+  },
+  data: () => ({
+    reviews: [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }],
+  }),
+};
 </script>
 
 <style>
