@@ -6,6 +6,7 @@ import SearchItems from '../views/SearchItems.vue'
 import FAQ from '../views/FAQ.vue'
 import ReturnPolicy from '../views/ReturnPolicy.vue'
 import Item from '../views/Item.vue'
+import Cart from '../views/Cart.vue'
 
 Vue.use(VueRouter)
 
@@ -47,6 +48,11 @@ const routes = [
     path: '/item',
     name: 'Item',
     component: Item
+  },
+  {
+    path: '/cart',
+    name: 'Cart',
+    component: Cart
   }
 ]
 
